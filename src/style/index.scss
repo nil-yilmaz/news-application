@@ -1,0 +1,74 @@
+@import-normalize;
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "./variables";
+@import "./utils";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+  margin: 0;
+  color: $primary-text-color;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $base-margin;
+  background: $brand-color;
+  color: $brand-text-color;
+}
+
+main {
+  margin: $base-margin;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 $base-margin;
+}
+
+a {
+  display: inline-block;
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+button,
+.button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: $medium-font-size;
+  padding: $small-margin $base-margin;
+  background: $brand-color;
+  color: $brand-text-color;
+  border-radius: 2px;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+
+    h1 {
+      text-align: left;
+      margin: 0;
+    }
+  }
+}

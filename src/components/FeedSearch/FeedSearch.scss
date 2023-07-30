@@ -1,0 +1,20 @@
+@import "../../style/variables";
+
+.feed-search {
+  display: flex;
+  align-items: center;
+}
+
+.feed-search__button {
+  background: none;
+  font-size: $large-font-size;
+  line-height: 1;
+  padding: 0;
+  width: 2rem;
+  height: 100%;
+
+  &:hover,
+  &:focus {
+    background: $active-color;
+  }
+}
